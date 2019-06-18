@@ -1,0 +1,17 @@
+<style type="text/css">
+	.makehover{
+		transition: background 2s ease-out;
+	}
+	.makehover:hover{
+		background: grey;
+	}
+</style>
+
+
+{% for person in matches %}
+	<div class="card mt-2 makehover" >
+	  <div class="card-body">
+	    {{ person }} 
+	  </div>
+	</div>
+{% endfor %}
